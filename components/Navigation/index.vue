@@ -43,7 +43,7 @@ nav{
   height: 3em;
   padding: 1em;
   margin-top: 1em;
-  background: rgba(215, 248, 228, 0.671);
+  background: rgba(23, 230, 106, 0.671);
   font-weight: 900;
   position: fixed;
   z-index: 2;
@@ -79,7 +79,7 @@ a{
   border: aliceblue 0.2em solid;
 }
 .colored{
-  background: rgb(81, 0, 255);
+  background: rgb(1, 59, 16);
   width: 80%;
 }
 .colored>a{

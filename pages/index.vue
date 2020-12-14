@@ -3,6 +3,8 @@
     <AboutUs/>
     <Services/>
     <Portfolio/>
+    <JobOffer/>
+    <Maps/>
   </div>
 </template>
 
