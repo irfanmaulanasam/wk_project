@@ -2,6 +2,7 @@
   <div id="app">
     <AboutUs/>
     <Services/>
+    <Portfolio/>
   </div>
 </template>
 

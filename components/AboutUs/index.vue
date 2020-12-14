@@ -32,7 +32,7 @@ export default {};
 
 <style scoped>
 .container {
-  padding: 64px;
+  padding: 4em;
 }
 
 .row:after {
