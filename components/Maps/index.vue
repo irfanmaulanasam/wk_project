@@ -14,7 +14,7 @@
       </iframe>
       <div class="address">
         Our Office jl. kemang utara no.51, Jakarta Selatan, 12730
-        <button class="button">Read More</button>
+        <WhatsappButton/>
       </div>
   </div>
 </template>
@@ -25,8 +25,9 @@ export default {};
 
 <style scoped>
 #contact {
-  margin-top: 6em;
+  margin-top: 1em;
   padding: 1em;
+  background-color: white;
 }
 .col {
   display: flex;

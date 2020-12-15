@@ -6,7 +6,7 @@
       <Services/>
       <Portfolio/>
       <JobOffer/>
-      <Maps/>
+      <Maps/> 
     </div>
       <Scroll />
   </div>

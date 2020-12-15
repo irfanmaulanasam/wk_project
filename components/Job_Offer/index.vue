@@ -1,6 +1,6 @@
   <template>
   <div id="job-offer">
-    <div v-for="(data, index) in images" :key="index">
+    <div  v-for="(data, index) in images" :key="index">
       <div class="container" v-if="index % 2 == 0">
         <div class="row">
           <div class="column-66">
@@ -160,10 +160,17 @@ img {
 @media screen and (max-width: 1000px) {
   .column-66,
   .column-33 {
+    padding: 0.5em;
     width: 100%;
     text-align: center;
   }
-
+  .container{
+    padding: 1;
+  }
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
   img {
     margin: auto;
   }
@@ -177,6 +184,9 @@ img {
   .medium-font {
     font-weight: bold;
     font-size: 18px;
+  }
+  .column-66{
+    text-align: justify;
   }
 }
 </style>

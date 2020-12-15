@@ -41,7 +41,7 @@ export default {};
 }
 .row {
   margin: 1em;
-  background-color: springgreen;
+  background-color: white;
   padding: 2.5em;
   display: flex;
 
