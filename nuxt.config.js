@@ -6,7 +6,7 @@ export default {
   //   host: '0.0.0.0' // default: localhost
   // },
   generate: {
-    fallback: '404.html'
+    fallback: false
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
