@@ -1,36 +1,36 @@
 <template>
-    <a @click="scrollTop" v-show="visible" class="bottom-right">
-        <slot></slot>
-    </a>
+  <a @click="scrollTop" v-show="visible" class="bottom-right">
+    <slot></slot>
+  </a>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      visible: false
-    }
+      visible: false,
+    };
   },
   methods: {
     scrollTop: function () {
       this.intervalId = setInterval(() => {
         if (window.pageYOffset === 0) {
-          clearInterval(this.intervalId)
+          clearInterval(this.intervalId);
         }
-        window.scroll(0, window.pageYOffset - 50)
-      }, 20)
+        window.scroll(0, window.pageYOffset - 50);
+      }, 20);
     },
     scrollListener: function (e) {
-      this.visible = window.scrollY > 200
-    }
+      this.visible = window.scrollY > 200;
+    },
   },
   mounted: function () {
-    window.addEventListener('scroll', this.scrollListener)
+    window.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy: function () {
-    window.removeEventListener('scroll', this.scrollListener)
-  }
-}
+    window.removeEventListener("scroll", this.scrollListener);
+  },
+};
 </script>
 
 <style scoped>

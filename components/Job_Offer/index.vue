@@ -112,7 +112,9 @@ export default {
 .container {
   padding: 4em;
 }
-
+.row{
+  display: flex;
+}
 .row:after {
   content: "";
   display: table;
@@ -161,8 +163,20 @@ img {
     width: 100%;
     text-align: center;
   }
+
   img {
     margin: auto;
+  }
+  .large-font {
+    font-size: 24px;
+  }
+
+  .xlarge-font {
+    font-size: 32px;
+  }
+  .medium-font {
+    font-weight: bold;
+    font-size: 18px;
   }
 }
 </style>

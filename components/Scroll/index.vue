@@ -1,7 +1,7 @@
 <template>
   <ScrollTopComponent>
-    <a class="btn btn-light">
-      <arrow/>
+    <a class="btn">
+      <Arrow />
     </a>
   </ScrollTopComponent>
 </template>

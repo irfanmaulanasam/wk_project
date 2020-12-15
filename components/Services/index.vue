@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="services" class="container">
     <h2 class="title">Our Services</h2>
     <div class="row">
       <div class="col">
@@ -120,10 +120,8 @@
 </template>
 
 <script>
-import pricetag from "./icon/pricetag.svg";
 export default {
   components: {
-    pricetag,
   },
 };
 </script>
@@ -133,7 +131,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em;
+  padding: 4em;
   background-color: whitesmoke;
 }
 .row {

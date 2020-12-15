@@ -1,19 +1,32 @@
 <template>
   <div id="app">
-    <AboutUs/>
-    <Services/>
-    <Portfolio/>
-    <JobOffer/>
-    <Maps/>
+    <Navigation />
+    <div class="main">
+      <AboutUs/>
+      <Services/>
+      <Portfolio/>
+      <JobOffer/>
+      <Maps/>
+    </div>
+      <Scroll />
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
 <style>
-
+html {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* box-sizing: border-box; */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/576/820/non_2x/dot-pattern-background-vector.jpg");
+} 
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 </style>
