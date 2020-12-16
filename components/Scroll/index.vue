@@ -20,7 +20,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  rotate: -90deg;
+  /* rotate: -90deg; */
+   transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
 }
 </style>
 
