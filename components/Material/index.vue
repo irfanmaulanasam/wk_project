@@ -66,14 +66,11 @@ export default {
 
 <style scoped>
 
-
 .band {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  
   display: grid;
-  
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
@@ -84,12 +81,6 @@ export default {
   .band {
     grid-template-columns: repeat(2, 1fr);
   }  
-  .item-1 {
-  grid-column: 1/ span 2;
-  }
-  .item-1 h1 {
-    font-size: 30px;
-  }
 }
 
 @media only screen and (min-width: 850px) {

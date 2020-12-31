@@ -1,9 +1,39 @@
 <template>
-  <div id="contact">
-    <div class="bg-green w-full fixed bottom-0">
-      
-    </div>
-  </div>
+  <div class="wrapper">
+  <header class="header"><h1>Innovators of the new genre</h1></header>
+  <figure class="featured-image-1">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/579121/karina-carvalho-87594-sm.jpg" alt="Photo by Karina Carvalho on Unsplash">
+   </figure>
+  <div class="number-1">1</div>
+  <article class="article article-1">
+    <h2>Technical information</h2>
+    <p>In 1985 Aldus Corporation launched its first desktop publishing program Aldus PageMaker for Apple Macintosh computers.</p>
+  </article>
+  <figure class="featured-image-2">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/579121/jc-dela-cuesta-311203-sm.jpg" alt="Photo by JC Dela Cuesta on Unsplash">
+   </figure>
+  <div class="number-2">2</div>
+  <article class="article article-2">
+    <h2>Variants</h2>
+    <p>Released in 1987 for PCs running Windows 1.0.</p>
+  </article>
+  <figure class="featured-image-3">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/579121/seth-doyle-151915-sm.jpg" alt="Photo by Seth Doyle on Unsplash">
+   </figure>
+  <div class="number-3">3</div>
+  <article class="article article-3">
+    <h2>When not to use it</h2>
+    <p>The toppings you may chose for that TV dinner pizza slice when you forgot to shop for foods, the paint you may slap on your face to impress the new boss is your business. But what about your daily bread?</p>
+  </article>
+  <figure class="featured-image-4">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/579121/tim-marshall-189232-sm.jpg" alt="Photo by Tim Marshall on Unsplash">
+   </figure>
+  <div class="number-4">4</div>
+  <article class="article article-4">
+    <h2>So Lorem Ipsum is bad</h2>
+    <p>One of the villagers, Kristina Halvorson from Adaptive Path, holds steadfastly to the notion that design can’t be tested without real content.</p>
+  </article>
+</div>
 </template>
 
 <script>
@@ -13,21 +43,176 @@ export default {
 </script>
 
 <style>
-.bg-green{
-  background-color: green;
+*, *:before, *:after { 
+  box-sizing: border-box;
 }
-.w-full{
-  width: 100%;
+
+body {
+  background: #eee;
+  color: #191919;
+  font-family: 'Lato', sans-serif;
 }
-.fixed{
-  position: fixed;
+
+h1, h2 {
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 0;
+  text-transform: uppercase;
 }
-.bottom-0{
-  bottom: 0;
+
+figure {
+  margin: 0;
 }
-@media screen and(max-width: 1000px) {
-  #contact{
-    display: flex;
+
+img {
+  height: auto;
+  width: 100%;  
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 24px;
+  max-width: 1000px;
+  position: relative;
+}
+
+.wrapper > * {
+  grid-column: 1 / span 2;
+}
+
+.header {
+  font-size: 1.5em;
+  grid-row: 1 / 2;
+}
+
+header:after {
+  background: #6817ba;
+  content: "";
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+.article {
+  text-align: right;
+}
+
+.featured-image-1 {
+  grid-row: 2 / 3;
+}
+
+.number-1 {
+  grid-row: 2 / 4;
+}
+
+.featured-image-2, .number-2 {
+  grid-row: 4 / 5;
+}
+
+.number-1, .number-4 {
+  align-self: end;
+  color: rgba(104,23,186,0.5);
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 480px;
+  line-height: 480px;
+  grid-column: 1 / 2;
+}
+
+.article-1, .article-4 {
+  grid-column: 2 / 3;
+}
+
+.featured-image-2, .number-2 {
+  align-self: end;
+}
+
+.number-2 {
+  color: #eee;
+  font-size: 200px;
+  justify-self: end;
+  line-height: 160px;
+}
+
+.number-3 {
+  background: black;
+  border-radius: 130px;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+  height: 130px;
+  line-height: 130px;
+  position: absolute;
+  grid-row: 6 / 7;
+  right: -20px;
+  text-align: center;
+  top: -20px;
+  width: 130px;
+}
+
+.featured-image-3 img {
+  height: 100%;
+}
+
+.number-4 {
+  font-size: 320px;
+  left: -20px;
+  line-height: 320px;
+  position: absolute;
+}
+
+@media (min-width: 600px) {
+  
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr 2fr);
+    margin: 24px auto;
   }
+  
+  .header {
+    grid-column: 3 / 5;
+    width: 70%;
+  }
+  
+  .featured-image-1 {
+    grid-row: 1 / 3;
+  }
+  
+  .article-1 {
+    grid-row: 3 / 4;
+  }
+  
+  .article-2 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+  }
+  
+  .featured-image-2, .number-2 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
+  }
+
+  .featured-image-3, .number-3 {
+    grid-row: 4 / 6;
+  }
+  
+  .featured-image-4, .number-4 {
+    grid-column: 3 / 5;
+    grid-row: 5 / 6;
+  }
+  
+  .number-4 {
+    font-size: 320px;
+    grid-row: 5 / 7;
+  }
+  
+  .article-3, .article-4 {
+    grid-row: 6 / 7;
+  }
+  
+  .article-4 {
+    grid-column: 4 / 5;
+  }
+  
 }
 </style>
