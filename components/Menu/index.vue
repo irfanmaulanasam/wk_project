@@ -24,7 +24,7 @@ export default {
   },
 };
 </script>
-<style>
+<style >
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.2s ease;
@@ -37,7 +37,7 @@ export default {
 }
 
 .sidebar-backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.63);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -52,9 +52,9 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
+  padding-top: 2em;
   height: 100vh;
   z-index: 999;
-  padding: 3rem 20px 2rem 20px;
-  width: 300px;
+  width: 200px;
 }
 </style>

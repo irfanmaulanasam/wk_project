@@ -9,19 +9,14 @@
         <p>
           <span class="medium-font">Kami adalah tenaga profesional.</span>
           kenapa anda harus memilih kami sebagai rekanan untuk pemasangan kanopi
-          karena WK merupakan badan usaha pengrajin dibidang konstruksi,
-          khususnya Canopy, Awning, Tenda Membrane. Dll Layanan kami bersifat
-          terstruktur, dari tahapan komunikasi, pengukuran permodelan kontruksi
-          dan bentuk, serta pengerjaan kami lakukan secara langsung, tanpa
-          adanya pelimpahan urusan pengerjaan ataupun sub ke pihak lain.
-          Sehingga kami dapat memberikan garansi yang utuh, harga bersaing dan
-          pelayanan prima.
+          karena Warung Canopy merupakan badan usaha pengrajin dibidang konstruksi,
+          khususnya Canopy, Awning, Tenda Membrane, Dll.
         </p>
         <WhatsappButton />
       </div>
       <div class="column-33">
         <img
-          src="https://images.pexels.com/photos/2962009/pexels-photo-2962009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          src="~/assets/images/6.jpeg"
           width="335"
           height="471"
         />
@@ -36,7 +31,7 @@ export default {};
 
 <style scoped>
 #about-us{
-  margin: 2em;
+  margin: 0.5rem;
   background: rgba(124, 247, 130, 0.322);
 }
 .row {
@@ -107,6 +102,9 @@ img {
   }
   .column-66{
     text-align: justify;
+  }
+  .column-33{
+    padding: 0.5rem 0;
   }
 }
 </style>

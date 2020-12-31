@@ -12,7 +12,7 @@
       </div>
       <a href="#material" class="bar-menu">material</a>
       <a href="#services" class="bar-menu">Services</a>
-      <a href="#contact" class="bar-menu">Contact</a>
+      <a href="#maps" class="bar-menu">Contact</a>
       <div class="sidenav-button" @click="sidenavActive = !sidenavActive">
         <svg
           v-if="!sidenavActive"
@@ -45,14 +45,14 @@
       </div>
     </div>
     <Menu :isPanelOpen="sidenavActive">
-      <ul class="sidenav">
-        <li><a href="#about-us" @click="sidenavActive = !sidenavActive">About Us</a></li>
-        <li><a href="#job-offer" @click="sidenavActive = !sidenavActive">Job-offer</a></li>
-        <li><a href="#material" @click="sidenavActive = !sidenavActive">Material Support</a></li>
-        <li><a href="#services" @click="sidenavActive = !sidenavActive">Services</a></li>
-        <li><a href="#portfolio" @click="sidenavActive = !sidenavActive">Portfolio</a></li>
-        <li><a href="#contact" @click="sidenavActive = !sidenavActive">Contact Us</a></li>
-      </ul>
+      <div class="sidenav">
+        <a href="#about-us"  @click="sidenavActive = !sidenavActive">About Us</a>
+        <a href="#job-offer"  @click="sidenavActive = !sidenavActive">Job-offer</a>
+        <a href="#material"  @click="sidenavActive = !sidenavActive">Material Support</a>
+        <a href="#services"  @click="sidenavActive = !sidenavActive">Services</a>
+        <a href="#portfolio"  @click="sidenavActive = !sidenavActive">Portfolio</a>
+        <a href="#maps"  @click="sidenavActive = !sidenavActive">Contact Us</a>
+      </div>
     </Menu>
   </div>
 </template>
@@ -155,15 +155,15 @@ a {
     width: 2.5em;
   }
   .sidenav{
-    display: block;
+    display: contents;
     color: white;
+    font-size: small;
   }
-  .sidenav>li{
-    list-style: none;
-  }
-  .sidenav>li>a{
+  .sidenav>a{
     text-decoration: none;
     color: white;
+    text-align: justify;
+    font-weight: bold;
   }
   .sidenav-button > svg {
     height: 1.8em;

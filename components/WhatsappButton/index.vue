@@ -5,9 +5,9 @@
       class="buttons"
       target="_blank"
     >
-    <p>
+    <span>
       hubungi kami sekarang
-    </p>
+    </span>
     </a>
   </div>
 </template>
@@ -41,14 +41,15 @@ p{
   text-align: justify;
   border: none;
   color: white;
-  padding: 14px 28px;
+  padding: 12px 20px;
   font-size: 16px;
   cursor: pointer;
   background-color: #4CAF50;
 }
 @media screen and(max-width: 1000px){
   .button{
-    padding: 6px 14px;
+    padding: 6px 10px;
+    font-size: 12px;
   }
 }
 </style>

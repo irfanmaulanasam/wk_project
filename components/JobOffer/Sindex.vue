@@ -4,16 +4,13 @@
       <div class="container" v-if="index % 2 == 0">
         <div class="row">
           <div class="column-66">
-            <h1 class="xlarge-font"><b>{{data.name||'The App'}}</b></h1>
+            <h1 class="xlarge-font"><b>{{data.name}}</b></h1>
             <h1 class="large-font" style="color: MediumSeaGreen">
-              <b>{{ data.reason||'Why buy it?'}}</b>
+              <b>{{ data.reason}}</b>
             </h1>
             <p>
-              <span style="font-size: 36px">{{data.why ||'Take photos like a pro'}},</span>
-               {{ data.description ||`You should buy this app because lorem ipsum consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.`}}
+              <span class="bold medium-font">{{data.why }},</span>
+               {{ data.description }}
             </p>
             <WhatsappButton />
           </div>
@@ -27,7 +24,6 @@
         </div>
       </div>
 
-      <!-- Clarity Section -->
       <div class="container" style="background-color: #f1f1f1" v-else>
         <div class="row">
           <div class="column-33">
@@ -38,16 +34,11 @@
             />
           </div>
           <div class="column-66">
-            <h1 class="xlarge-font"><b>{{data.name||'Clarity'}}</b></h1>
-            <h1 class="large-font" style="color: red"><b>{{ data.why||'Pixels, who?'}}</b></h1>
+            <h1 class="xlarge-font"><b>{{data.name}}</b></h1>
+            <h1 class="large-font" style="color: red"><b>{{ data.why}}</b></h1>
             <p>
-              <span style="font-size: 24px">{{data.reason||'A revolution in resolution.'}}</span>
-              {{data.description||`Sharp and clear photos with the world's best photo engine,
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquipex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.`}}
+              <span class="bold medium-font">{{data.reason}}</span>
+              {{data.description}}
             </p>
             <button class="button" style="background-color: red">
               Read More
@@ -80,46 +71,46 @@ export default {
           reason:"Tenda Membrane atau biasa juga disebut canopy membrane adalah model dan trend terbaru di arsitektur tenda,",
           description:` Tenda membrane memiliki model dan desain yang futuristik yang merepresentasikan dunia arsitektur modern saat ini. Tenda Membrane dapat menambah suasana di sekitar lokasi pemasangan menjadi lebih modern dan eksotis. Desain Tenda Membrane sangat fleksibel dan dapat secara bebas disesuaikan dengan kebutuhan masing-masing pemesan, namun yang tentunya akan dibatasi oleh keadaan sekitar lokasi pemasangan. Tenda Membrane biasanya dipasang ditempat-tempat publik, seperti taman, lokasi wisata, resto, mall, hotel, plaza, perkantoran dan tentunya di tempat-tempat pribadi seperti area rumah, resort, villa dan lain-lain. Terdapat dua jenis model utama Tenda Membrane atau canopy membrane, yang pertama adalah Tenda membrane dengan struktur rangka besi dan Tenda membrane yang lebih banyak menggunakan tarikan seling/kawat yang biasa juga disebut dengan model Tenda Layar. Terdapat beberapa jenis bahan yang biasa digunakan untuk membuat Tenda Membrane atau canopy membrane, anda bisa berkonsultasi terlebih dahulu dengan teknisi Braja Awning untuk menetukannya. Teknisi Braja Awning telah berpengalaman cukup lama dalam pembuatan dan pemasangan jenis Tenda Membrane ataupun tenda layar.`
         },
-        {
-          name: "",
-          img: "store_corbeille",
-          kind: "png",
-          why:"",
-          reason:"",
-          description:""
-        },
-        {
-          name: "",
-          img: "store_fixe",
-          kind: "png",
-          why:"",
-          reason:"",
-          description:""
-        },
-        {
-          name: "",
-          img: "store_projection",
-          kind: "png",
-          why:"",
-          reason:"",
-          description:""
-        },
-        {
-          name: "",
-          img: "store_veranda",
-          kind: "png",
-          why:"",
-          reason:"",
-          description:""
-        },
-        {
-          name: "",
-          img: "voile_d",
-          kind: "png",
-          why:"",
-          reason:"",
-          description:""
-        },
+        // {
+        //   name: "",
+        //   img: "store_corbeille",
+        //   kind: "png",
+        //   why:"",
+        //   reason:"",
+        //   description:""
+        // },
+        // {
+        //   name: "",
+        //   img: "store_fixe",
+        //   kind: "png",
+        //   why:"",
+        //   reason:"",
+        //   description:""
+        // },
+        // {
+        //   name: "",
+        //   img: "store_projection",
+        //   kind: "png",
+        //   why:"",
+        //   reason:"",
+        //   description:""
+        // },
+        // {
+        //   name: "",
+        //   img: "store_veranda",
+        //   kind: "png",
+        //   why:"",
+        //   reason:"",
+        //   description:""
+        // },
+        // {
+        //   name: "",
+        //   img: "voile_d",
+        //   kind: "png",
+        //   why:"",
+        //   reason:"",
+        //   description:""
+        // },
       ],
     };
   },
@@ -161,7 +152,12 @@ export default {
 .xlarge-font {
   font-size: 64px;
 }
-
+.medium-font{
+  font-size: 24px;
+}
+.bold{
+  font-weight: bold;
+}
 .button {
   border: none;
   color: white;

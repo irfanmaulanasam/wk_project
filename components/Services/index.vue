@@ -1,6 +1,10 @@
 <template>
-  <div id="services" class="container">
-    <h2 class="title">Our Services</h2>
+ <SectionLayout
+  name="services"
+  bg="whitesmoke"
+  title="our services"
+ >
+  <div slot="content" class="container">
     <div class="row">
       <div class="col">
         <div class="card-panel">
@@ -117,6 +121,7 @@
       </div>
     </div>
   </div>
+ </SectionLayout>
 </template>
 
 <script>
@@ -131,8 +136,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4em;
-  background-color: whitesmoke;
+  padding: 2em;
+  border-radius: 15px;
+  background-color: white;
 }
 .row {
   display: flex;
@@ -142,16 +148,12 @@ export default {
   margin: 0.5em;
   text-align: justify;
 }
-.title {
-  font-style: normal;
-  font-weight: bold;
-  margin-bottom: 2em;
-}
 .card-panel {
   background-color: aquamarine;
   padding: 1em;
   padding-top: 2em;
   position: relative;
+  border-radius: 15px;
 }
 .icon {
   position: absolute;
