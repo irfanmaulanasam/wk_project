@@ -4,15 +4,15 @@
       class="navbar"
       :class="{ colored: visible }"
     >
-      <a href="#about-us" class="bar-menu">About Us</a>
-      <a href="#portfolio" class="bar-menu">Portfolio</a>
-      <a href="#job-offer" class="bar-menu">job-offer</a>
+      <nuxt-link to="#about-us" class="bar-menu">About Us</nuxt-link>
+      <nuxt-link to="#portfolio" class="bar-menu">Portfolio</nuxt-link>
+      <nuxt-link to="#job-offer" class="bar-menu">job-offer</nuxt-link>
       <div id="logo">
         <img :src="require(`@/assets/logo.jpeg`)" />
       </div>
-      <a href="#material" class="bar-menu">material</a>
-      <a href="#services" class="bar-menu">Services</a>
-      <a href="#maps" class="bar-menu">Contact</a>
+      <nuxt-link to="#material" class="bar-menu">material</nuxt-link>
+      <nuxt-link to="#services" class="bar-menu">Services</nuxt-link>
+      <nuxt-link to="#maps" class="bar-menu">Contact</nuxt-link>
       <div class="sidenav-button" @click="sidenavActive = !sidenavActive">
         <svg
           v-if="!sidenavActive"
@@ -46,12 +46,12 @@
     </div>
     <Menu :isPanelOpen="sidenavActive">
       <div class="sidenav">
-        <a href="#about-us"  @click="sidenavActive = !sidenavActive">About Us</a>
-        <a href="#job-offer"  @click="sidenavActive = !sidenavActive">Job-offer</a>
-        <a href="#material"  @click="sidenavActive = !sidenavActive">Material Support</a>
-        <a href="#services"  @click="sidenavActive = !sidenavActive">Services</a>
-        <a href="#portfolio"  @click="sidenavActive = !sidenavActive">Portfolio</a>
-        <a href="#maps"  @click="sidenavActive = !sidenavActive">Contact Us</a>
+        <nuxt-link to="#about-us"  @click="sidenavActive = !sidenavActive">About Us</nuxt-link>
+        <nuxt-link to="#job-offer"  @click="sidenavActive = !sidenavActive">Job-offer</nuxt-link>
+        <nuxt-link to="#material"  @click="sidenavActive = !sidenavActive">Material Support</nuxt-link>
+        <nuxt-link to="#services"  @click="sidenavActive = !sidenavActive">Services</nuxt-link>
+        <nuxt-link to="#portfolio"  @click="sidenavActive = !sidenavActive">Portfolio</nuxt-link>
+        <nuxt-link to="#maps"  @click="sidenavActive = !sidenavActive">Contact Us</nuxt-link>
       </div>
     </Menu>
   </div>

@@ -2,30 +2,24 @@
   <div id="mozaic">
       <div class="container">
           <div 
-            v-for="img in loop" 
-            :key="img"
+            v-for="(data,i) in content" 
+            :key="i"
             class="tile"
           >
-            <img
-            v-if="loop < 5"
-            :src="require(`@/assets/images/${amount-(img-1)}.jpeg`)" 
-            >
-            <img
-            v-else
-            :src="require(`@/assets/images/${((content*5)-img)+1}.jpeg`)" 
-            >
+          <overlay-photo-desc
+            :image="require(`@/assets/images/${data.image}.jpeg`)"
+          />
           </div>
       </div>
-         <slot></slot>
   </div>
 </template>
 
 <script>
+import OverlayPhotoDesc from './OverlayPhotoDesc.vue';
 export default {
+  components: { OverlayPhotoDesc },
   props:{
-    content:Number,
-    amount:Number,
-    loop:Number,
+    content:Array,
   },
 };
 </script>
@@ -40,7 +34,7 @@ export default {
 .none{
   display: none;
 }
-.tile img{
+img{
     width: 100%;
     height: 100%;
     object-fit: cover;

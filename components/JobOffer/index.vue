@@ -431,6 +431,10 @@ export default {
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
   grid-gap: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 1;
 }
 .content{
   margin-top: 1em;

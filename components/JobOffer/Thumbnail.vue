@@ -43,6 +43,7 @@ export default {
   position: relative;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
+  background-color: white;
 }
 #thumbnail:hover {
   top: -2px;

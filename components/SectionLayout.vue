@@ -21,6 +21,7 @@ export default {
 
 <style scoped>
 section{
+  top: 50px;
   margin-top: 1em;
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -28,6 +29,7 @@ section{
   padding-left: 0.5em;
   padding-right: 0.5em;
   border: rgba(10, 10, 10, 0.034) solid 2px;
+  
 }
 h1{
   font-weight: 900;

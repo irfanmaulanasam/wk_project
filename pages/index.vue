@@ -8,6 +8,7 @@
       <Material/>
       <JobOffer/>
       <Maps/> 
+      <Footer/>
     </div>
       <Scroll />
   </div>
