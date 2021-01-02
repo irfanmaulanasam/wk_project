@@ -43,7 +43,17 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
-
+  pwa: {
+    manifest: {
+      name: 'Warung Canopy',
+      short_name: 'WarCan',
+      lang: 'en',
+      description: 'pwa web promo warung canopy',
+      theme_color: '#00C58E',
+      background_color: '#000',
+      ogImage: `@nuxtjs/static/icon.png`
+    },
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 

@@ -12,7 +12,7 @@
         <p>
           {{ description }}
         </p>
-          <img :src="logo" :alt="title">
+          <img :src="require(`~/assets/content/product/${logo}`)" :alt="title">
         <span>
         </span>
       </article>
@@ -77,10 +77,14 @@ export default {
 article img{
   width: 35%;
 }
+article p{
+  font-size: medium;
+}
 /* typography */
-h1 {
+article h1 {
   font-size: 20px;
   margin: 0;
+  text-transform: capitalize;
   color: #333;
 }
 
