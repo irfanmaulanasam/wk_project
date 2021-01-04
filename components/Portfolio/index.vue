@@ -15,99 +15,7 @@ export default {
     return {
       amount: 18,
       muchLoop:null,
-      imageList:[
-        {
-
-          image:1,
-          title:'',
-          desc:''
-        },
-        {
-          image:2,
-          title:'',
-          desc:''
-        },
-        {
-          image:3,
-          title:'',
-          desc:''
-        },
-        {
-          image:4,
-          title:'',
-          desc:''
-        },
-        {
-          image:5,
-          title:'',
-          desc:''
-        },
-        {
-          image:6,
-          title:'',
-          desc:''
-        },
-        {
-          image:7,
-          title:'',
-          desc:''
-        },
-        {
-          image:8,
-          title:'',
-          desc:''
-        },
-        {
-          image:9,
-          title:'',
-          desc:''
-        },
-        {
-          image:10,
-          title:'',
-          desc:''
-        },
-        {
-          image:11,
-          title:'',
-          desc:''
-        },
-        {
-          image:12,
-          title:'',
-          desc:''
-        },
-        {
-          image:13,
-          title:'',
-          desc:''
-        },
-        {
-          image:14,
-          title:'',
-          desc:''
-        },
-        {
-          image:15,
-          title:'',
-          desc:''
-        },
-        {
-          image:16,
-          title:'',
-          desc:''
-        },
-        {
-          image:17,
-          title:'',
-          desc:''
-        },
-        {
-          image:18,
-          title:'',
-          desc:''
-        },       
-      ],
+      imageList:require('@/assets/content/portfolio.json'),
     };
   },
   methods: {
@@ -140,14 +48,4 @@ export default {
 };
 </script>
 <style scoped>
-/* #portfolio {
-  margin: 0.5rem 0.5rem;
-  background-color: rgba(219, 216, 216, 0.521);
-  padding: 0.4rem;
-} @media screen and (max-width: 1000px) {
-  #portfolio {
-    margin: 0.2rem 0.2rem;
-    padding: 0.2rem;
-  }
-} */
 </style>

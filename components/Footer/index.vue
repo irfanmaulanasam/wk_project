@@ -15,6 +15,8 @@ export default {
 
 <style scoped>
   footer{
+    bottom: 0;
+    padding: 1em 0;
     display: flex;
     justify-content: center;
     color: white;

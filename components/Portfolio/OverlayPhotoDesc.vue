@@ -33,7 +33,7 @@ export default {
 .wrapper{
   position: relative;
   /* border: red solid 1px; */
-  height: 90%;
+  height: 100%;
   top: 0;
 }
 .wrapper:hover{

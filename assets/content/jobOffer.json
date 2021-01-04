@@ -1,6 +1,7 @@
-[
-  {
+{
+  "awning": {
     "title": "APA ITU CANOPY AWNING?",
+    "hypotesis":" awning adalah kata yang ditujukan kepada sebuah perangkat pelindung sekunder pada sebuah bangunan. Yaitu berupa jendela, garasi, teras dan struktur pelengkap pada area tertentu seperti pada arena olah raga maupun pada sebuah arena pertunjukan.",
     "desc": [
       "Sebelum kita jelaskan apa itu awning, apa kalian sering melihat ada sebuah benda yang dipasang diluar jendela atau teras pada bagian atas? Maka itu artinya bangunan tersebut menggunakan awning.",
       "Awning adalah penutup sekunder yang melekat pada dinding eksterior bangunan dan berfungsi untuk melindungi area dari panas dan terik sinar masuk ke bangunan karena bangunan yang pada jendela atau teras – terasnya terlindungi awning, akan mampu menjaga suhu area itu tetap rendah dan awning yang tepat akan mampu mempercantik desain arsitektur bangunan rumah kalian, bahkan di kota – kota besar awning kerap dipakai pemilik bisnis kuliner untuk memperindah tempat usaha mereka dan membuat tampilan bangunan makin memorable.",
@@ -12,11 +13,15 @@
       "https://images-na.ssl-images-amazon.com/images/I/71ua6mX9-iL._AC_SY450_.jpg"
     ]
   },
-  {
+  "window": {
     "title": "KREY WINDOWS",
+    "hypotesis":"Krey jendela atau wood blind yang akan membuat jendela menjadi indah, membuat ruangan menjadi lebih elegan dan terlihat mewah juga sebagai pelindung rumah maupun kantor dari sinar matahari.",
     "desc": [
-      "Krey jendela ini di desain untuk membantu mengurangi jumlah sinar matahari yang masuk agar tidak membuat suasana di dalam ruangan silau atau panas walau bisa mengatur intesitas cahaya matahari yang masuk tapi pada sisi yang lain system sirkulasi udara tetap bisa tercipta dengan baik sebab angina tidak punya halangan untuk masuk kedalam ruangan.",
-      "Cara pengoperasiannyapun sangat mudah dilakukan dan bisa disesuaikan dengan keinginan penghuni. Bila ingi menaikan dan menurunkan hal ini dapat dilakukan dengan praktis tanpa perlu proses yang rumit, tali ang berada disisi krey hanya tinggal ditarik kebawah lalu krey itu bisa bergerak atau menggulung kearah atas.",
+      "krey adalah alat penahan panas atau tampias hujan yg biasanya digunakan pada  teras rumah ataupun ruang dapur belakang rumah yg terbuat dari bahan bambu, namun dalam perkembanganya krey dapat dibuat dari material lain seperti kayu, alumuniaum atau bahkan kain, namun dengan begitu bahan yang digunakanpun tetap mengunakan bahan yang mempunyai sifat yang kuat, tahan lama serta tidak mudah mengalami perubahan bentuk meski terjadi perubahan cuaca.",
+      "Dalam perkembangan zaman, krey bukan hanya sekedar digunakan untuk melindungi suatu ruangan dari sinar matahari namun krey atau tirai juga digunakan sebagai penghias ruangan, penghias jendela, penghias pintu rumah dan lain sebagainya.",
+      "walau dapat digunakan sebagai penghias ruangan namun beberapa orang menganggap hal ini tidak begitu penting dan membeli tirai jendela dengan asal, karena jika salah dalam memilih tirai jendela tentu akan terkesan aneh, dengan demikian kita perlu menyesuaikan dengan konsep ruangan yang sebelumnya sudah diterapkan.",
+      "Krey jendela ini di desain untuk membantu mengurangi jumlah sinar matahari yang masuk agar tidak membuat suasana di dalam ruangan silau atau bahkan panas, walau bisa mengatur intesitas cahaya matahari yang masuk, namun pada sisi yang lain system sirkulasi udara tetap bisa tercipta dengan baik sebab angin tidak punya halangan untuk masuk kedalam ruangan.",
+      "cara pengoperasiannya juga sangat mudah dilakukan dan dapat disesuaikan dengan keinginan penghuni. Bila ingin menaikan dan menurunkan krey atau tirai hal ini dapat dilakukan dengan praktis tanpa perlu proses yang rumit, tali yang berada disisi krey hanya tinggal ditarik kebawah lalu krey itu akan bergerak atau menggulung kearah atas.",
       "Bahan yang digunakanpun mengunakan bahan yang mempunyai sifat yang kuat, tahan lama serta tidak mudah mengalami perubahan bentuk meski terjadi perubahan cuaca."
     ],
     "image": [
@@ -25,28 +30,43 @@
       "https://cheapestblinds.com/wp-content/uploads/2016/11/cheap-dove-grey-roman-blind.jpg"
     ]
   },
-  {
+  "umbrella": {
     "title": "CANOPY UMBRELLA",
+    "hypotesis":"Payung taman kanopi berkualitas tinggi dapat menjadi aksen yang indah di ruang teras atau taman dan dapat membawa banyak warna dan gaya ke area halaman belakang.",
     "desc": [
+      "canopy umbrella atau kanopi lipat yang didukung oleh rusuk kayu atau logam, yang biasanya dipasang pada tiang kayu, logam, atau plastik. Ini dirancang untuk melindungi seseorang dari hujan atau sinar matahari. Kata ''payung'' biasanya mengacu pada alat yang digunakan untuk perlindungan dari hujan. dan terlindung dari matahari.",
       "Kanopi berbentuk payung merupakan inovasi yang sangat bermanfaat. Di beberapa faktor, kanopi payung bisa memiliki manfaat yang lebih dibandingkan dengan kanopi yang statis. Kanopi statis adalah kanopi yang terpasang menjadi bagian dari bangunan yang tetap terpasang tanpa memiliki fungsi yang berubah.",
       "Kanopi Payung memiliki manfaat yang lebih fleksibel. Materialnya biasanya adalah kain yang tahan beban serta tahan panas. Ketahanan kain ini juga sangat tinggi. Kanopi payung ini menjadi lebih fleksibel karena bisa membuka dan menutup. Sebagaimana telah diketahui, fungsi kanopi adalah untuk melindungi dari cuaca ekstrim.",
-      "Namun kita tahun bahwa tidak di semua tempat selalu memiliki cuaca panas yang ekstrim di setiap waktu. Di beberapa negara, terdapat musim-musim antara panas dan dingin yang berbeda waktunya. Sehingga saat cuaca dingin, kanopi atau berbagai bangunan yang memiliki kanopi relatif tidak perlu menggunakan kanopi. Di sinilah keunggulan kanopi payung, bisa ditutup saat tidak dibutuhkan, misalnya saat cuaca dingin yang justru membutuhkan sinar matahari."
+      "Namun kita tahun bahwa tidak di semua tempat selalu memiliki cuaca panas yang ekstrim di setiap waktu. Di beberapa negara, terdapat musim-musim antara panas dan dingin yang berbeda waktunya. Sehingga saat cuaca dingin, kanopi atau berbagai bangunan yang memiliki kanopi relatif tidak perlu menggunakan kanopi. Di sinilah keunggulan kanopi payung, bisa ditutup saat tidak dibutuhkan, misalnya saat cuaca dingin yang justru membutuhkan sinar matahari. namun adapun kanopi payung yang tidak dapat ditutup."
     ],
     "image": [
+      "https://www.thegaragedoorcentre.co.uk/UserFiles/Image/images/Parasols/IMG_3614%20crop.jpg",
       "https://sc01.alicdn.com/kf/UTB8mc2wjyaMiuJk43PTq6ySmXXa5.jpg_350x350.jpg",
-      "https://cf.shopee.co.id/file/44b7a260b5dfece987128f0a2a278d3c"
+      "https://cf.shopee.co.id/file/44b7a260b5dfece987128f0a2a278d3c",
+      "http://localhost:3000/_nuxt/assets/images/17.jpeg",
+      "http://localhost:3000/_nuxt/assets/images/16.jpeg"
     ]
   },
-  {
+  "shade_sail": {
     "title": "CANOPY SHADE SAILS",
+    "hypotesis": "Sun shade sails yang sempurna untuk digunakan ditaman, halaman dan teras untuk memberikan keteduhan dan membuat hari - hari cerah lebih nyaman dan menyenangkan",
     "desc": [
-      "Shade sails bentuk Rectangle,concave, triangle Sun Shade Sails,solusi untuk meneduhkan halaman di rumah,kantor,hotel, shopping mall di area luar ruangan Anda. Juga dikenal sebagai Sun Sails, Canopy shade sails selain melindungi kita saat di halaman luar, tapi juga menambah keindahan pada teras Anda, halaman belakang, atau area outdoor lainnya, dan memberikan perlindungan yang sangat baik dari matahari dan radiasi UV yang berbahaya.",
-      "Karena bahan kain yang bagus dan kuat maka daya serap sinar matahari dengan baik sehingga mengurangi jumlah matahari yang turun."
+      "Canopy shade sails atau Layar teduh adalah perangkat untuk membuat teduh luar ruang yang didasarkan pada teknologi dasar sebagai layar kapal.","Layar teduh (shade sails) menggunakan membran fleksibel yang dikencangkan antara beberapa titik jangkar, ini adalah konstruksi rajutan yang memungkinkan Layar ketika dirancang, dipotong dan dijahit dengan benar, untuk diregangkan ke posisinya selama pemasangan tanpa kendur. Layar teduh memiliki perawatan yang rendah, mudah dibersihkan, dan dibuat untuk hampir semua desain dan bentuk.",
+      "Sun Shade sangat penting untuk menikmati alam bebas dengan nyaman. Layar teduh memberikan perlindungan UV hingga 95% dan Layar teduh khusus memberikan Peneduh di luar ruangan yang sangat baik di atas Dek, Teras, Kolam Renang, Area Bermain Anak, Area Makan atau, di mana saja yang membutuhkan Peneduh Eksterior.",
+      "titik pemasangan Shade Sail idealnya harus diatur dengan dua ketinggian alternatif, untuk memastikan bahwa layar tidak menahan air hujan.",
+      "Layar Teduh berbentuk persegi atau persegi panjang akan membutuhkan dua titik pemasangan yang lebih tinggi dan dua titik pemasangan yang lebih rendah, dengan tiang dengan ketinggian yang sama dipasang di sudut yang berlawanan secara diagonal. Layar Teduh berbentuk segitiga akan membutuhkan setidaknya satu titik pemasangan yang lebih tinggi.",
+      "Ada berbagai macam jenis dari canopy shade sails, yaitu:"
+    ],
+    "kinds": [
+      "(DualShade Shade Sail) DualShade adalah kain baru revolusioner yang dirancang untuk meningkatkan tampilan ruang luar Anda, Kain rajutan yang bernapas memungkinkan udara mengalir melalui layar naungan, menciptakan pengalaman luar ruangan yang sejuk dan nyaman sekaligus melindungi Anda dan keluarga dari sinar matahari",
+      "(Premium Shade Sail Kits) Premium Shade Sail Kit adalah solusi teduh terbaik untuk instalasi permanen yang unik",
+      "(Party Shade Sails) Layar Pesta serba guna, portabel, dan bebas beban. Layar yang terjangkau ini dapat digunakan hampir di mana saja, untuk perlindungan dari matahari selama piknik di luar ruangan hingga menciptakan area bermain yang menyenangkan bagi anak-anak",
+      "(Ready-to-Hang Shade Sails) Ready-to-Hang Shade Sail memberi Anda jumlah naungan yang tepat di mana pun Anda membutuhkannya! Ideal sebagai solusi naungan sementara atau semi-permanen, tali pra-pasang Layar Peneduh Siap Gantung membuat pemasangan menjadi mudah"
     ],
     "image": [
-      "https: //ecs7.tokopedia.net/img/cache/700/product-1/2019/7/1/5341732/5341732_cd2516ab-ef27-4ac7-8164-da0e798cd043_313_313.jpg",
-      "https: //apollo-singapore.akamaized.net/v1/files/npodxa7e4pi13-ID/image",
-      "https: //cdn.shopify.com/s/files/1/0026/8776/2493/products/01_126_d040e3a7-6179-4d37-a94f-28466f3fad2c_720x.jpg?v=1570036125"
-    ]
+      "https://images.adsttc.com/media/images/5c40/7b40/284d/d15f/5800/00c8/large_jpg/West_Georgia_Shade-GA-Multiple_Shade_Sails-View_04b.jpg?1547729723",
+      "https://cdn.shopify.com/s/files/1/0026/8776/2493/products/01_126_d040e3a7-6179-4d37-a94f-28466f3fad2c_720x.jpg?v=1570036125",
+      "https://i5.walmartimages.com/asr/4b60fb46-9a33-40db-b1b9-3f7d009c611e_1.a34938980eed2a64fea2d83bd04614e4.jpeg"
+      ] 
   }
-]
+}

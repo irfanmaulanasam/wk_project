@@ -31,15 +31,9 @@ export default {
     grid-gap: 1rem;
     margin: 1em 0 0 0;
 }
-.none{
-  display: none;
+.tile{
+  background-color: transparent;
 }
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .tile:nth-child(1){
     grid-column: span 4;
     grid-row: span 2;

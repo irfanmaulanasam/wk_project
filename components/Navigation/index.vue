@@ -1,9 +1,6 @@
 <template>
-  <div id="navigation">
-    <div 
-      class="navbar"
-      :class="{ colored: visible }"
-    >
+  <section>
+    <nav :class="{ colored: visible }">
       <nuxt-link to="#about-us" class="bar-menu">About Us</nuxt-link>
       <nuxt-link to="#portfolio" class="bar-menu">Portfolio</nuxt-link>
       <nuxt-link to="#job-offer" class="bar-menu">job-offer</nuxt-link>
@@ -43,24 +40,38 @@
           />
         </svg>
       </div>
-    </div>
-    <Menu :isPanelOpen="sidenavActive">
+    </nav>
+    <Menu :isPanelOpen="sidenavActive" @click="sidenavActive = false">
       <div class="sidenav">
-        <nuxt-link to="#about-us"  @click="sidenavActive = !sidenavActive">About Us</nuxt-link>
-        <nuxt-link to="#job-offer"  @click="sidenavActive = !sidenavActive">Job-offer</nuxt-link>
-        <nuxt-link to="#material"  @click="sidenavActive = !sidenavActive">Material Support</nuxt-link>
-        <nuxt-link to="#services"  @click="sidenavActive = !sidenavActive">Services</nuxt-link>
-        <nuxt-link to="#portfolio"  @click="sidenavActive = !sidenavActive">Portfolio</nuxt-link>
-        <nuxt-link to="#maps"  @click="sidenavActive = !sidenavActive">Contact Us</nuxt-link>
+        <nuxt-link to="#about-us" @click="sidenavActive = !sidenavActive"
+          >About Us</nuxt-link
+        >
+        <nuxt-link to="#job-offer" @click="sidenavActive = !sidenavActive"
+          >Job-offer</nuxt-link
+        >
+        <nuxt-link to="#material" @click="sidenavActive = !sidenavActive"
+          >Material Support</nuxt-link
+        >
+        <nuxt-link to="#services" @click="sidenavActive = !sidenavActive"
+          >Services</nuxt-link
+        >
+        <nuxt-link to="#portfolio" @click="sidenavActive = !sidenavActive"
+          >Portfolio</nuxt-link
+        >
+        <nuxt-link to="#maps" @click="sidenavActive = !sidenavActive"
+          >Contact Us</nuxt-link
+        >
       </div>
     </Menu>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
   data() {
     return {
+      outerHeight: null,
+      outerWidth: null,
       visible: false,
       sidenavActive: false,
     };
@@ -70,6 +81,7 @@ export default {
       this.visible = window.scrollY > 50;
     },
   },
+  computed: {},
   mounted: function () {
     window.addEventListener("scroll", this.scrollListener);
   },
@@ -80,26 +92,17 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 1em;
-  padding: 1em;
-  margin-top: 0.5em;
-  background: rgba(23, 230, 106, 0.671);
-  font-weight: 900;
+  nav {
+  top: 25px;
   position: fixed;
-  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0em;
+  z-index: 999;
 }
-
-a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
-  margin: 0 40px;
-}
-
 #logo {
   position: relative;
   width: 4em;
@@ -107,6 +110,27 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.sidenav {
+  display: contents;
+  color: white;
+  font-size: small;
+}
+.sidenav > a {
+  text-decoration: none;
+  color: white;
+  text-align: justify;
+  font-weight: bold;
+}
+.sidenav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 2.5em;
+}
+.sidenav-button > svg {
+  height: 1.8em;
 }
 #logo > img {
   position: absolute;
@@ -119,54 +143,51 @@ a {
   color: aliceblue;
   text-transform: uppercase;
   font-size: larger;
-  font-weight: 900;
   border: aliceblue 0.2em solid;
 }
 .colored {
-  background: rgb(1, 59, 16);
-  /* width: 80%; */
+  width: 100%;
+  background: none;
+}
+.bar-menu {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 40px;
+}
+a.nuxt-link-active {
+  font-weight: bold;
 }
 .colored > a {
   color: white;
 }
-.sidenav {
-  display: none;
-}
-.sidenav-button {
-  display: none;
-}
-@media screen and (max-width: 1000px) {
-  .navbar {
-    width: 90%;
-    justify-content: space-between;
-  }
-  .colored{
-    width: 90%;
-    background: none;
-  }
-  .bar-menu {
+@media screen and(min-width: 850px) {
+  .sidenav {
     display: none;
   }
   .sidenav-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5em;
-    width: 2.5em;
+    display: none;
   }
-  .sidenav{
-    display: contents;
-    color: white;
-    font-size: small;
+}
+@media screen and (min-width: 500px) {
+  nav {
+    justify-content: space-between;
+    background: rgba(23, 230, 106, 0.671);
+    padding: 0.5em;
   }
-  .sidenav>a{
-    text-decoration: none;
-    color: white;
-    text-align: justify;
-    font-weight: bold;
+  .colored {
+    background: rgb(1, 59, 16);
   }
-  .sidenav-button > svg {
-    height: 1.8em;
+  .bar-menu{
+    display: inline-flex;
+    text-align: center;
+    font-size: medium;
   }
+  .sidenav-button {
+    display: none;
+  }
+
 }
 </style>

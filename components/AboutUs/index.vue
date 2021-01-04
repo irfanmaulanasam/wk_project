@@ -31,7 +31,6 @@ export default {};
 
 <style scoped>
 #about-us{
-  margin: 0.5rem;
   background: rgba(124, 247, 130, 0.322);
 }
 .row {

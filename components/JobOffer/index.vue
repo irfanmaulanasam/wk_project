@@ -398,10 +398,18 @@
         </Thumbnail>
       </div>
       <div class="content">
-        <Awning v-if="selected== 'awning'"/>
-        <Window v-if="selected== 'window'"/>
-        <Umbrella v-if="selected== 'umbrella'"/>
-        <ShadeSail v-if="selected== 'shade sail'"/>
+        <Awning v-if="selected== 'awning'"
+          :content="job.awning"
+        />
+        <Window v-if="selected== 'window'"
+          :content="job.window"
+        />
+        <Umbrella v-if="selected== 'umbrella'"
+          :content="job.umbrella"
+        />
+        <ShadeSail v-if="selected== 'shade sail'"
+          :content="job.shade_sail"
+        />
       </div>
     </div>
   </SectionLayout>
@@ -412,6 +420,7 @@ export default {
   data() {
     return {
       selected: "awning",
+      job: require('@/assets/content/jobOffer.json')
     };
   },
   methods: {
@@ -433,11 +442,13 @@ export default {
   grid-gap: 20px;
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
+  top: 70px;
   z-index: 1;
 }
 .content{
   margin-top: 1em;
+  /* height: 90vh; */
+  /* overflow-y: scroll; */
 }
 /* @media only screen and (min-width: 500px) {
   .submenu {

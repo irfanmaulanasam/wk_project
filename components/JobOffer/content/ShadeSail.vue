@@ -1,28 +1,51 @@
 <template>
   <article>
-	<h1>
-		<span class="focusing">Focusing On</span> 
-		<span class="the">The</span> 
-		<span class="heart">Heart</span>
+  <h1>
+		<span class="focusing">{{SplitTitle[0]}} </span> 
+		<span class="the"> of </span> 
+		<span class="heart">{{SplitTitle[1]}} {{SplitTitle[2]}}</span>
 	</h1>
 	<cite>
-		by <span class="name">Jay Wamsley</span> | 
-		Photos by <span class="name">Jay Drowns</span>
+		by <span class="name">DNMA</span> | 
+		Photos by <span class="name">Unknown</span>
 	</cite>
-	<img src="https://images.unsplash.com/photo-1471119017026-179f1bb0a70e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="not actually Fabio" />
-	<aside>Fabio Sagebin is currently in the final year of a residency at the University of Rochester Medical Center.</aside>
-	<main>
-		<p><span class="dropcap">A dozen</span> years ago, soon-to-be UVU student Fabio Sagebin was doing research - on whether or not higher education was for him and, if so, where he should enroll. A dozen years from now, Dr. Sagebin will again likely be doing research - this time on better ways to repear hearts.</p>
-		<p>Currently a member of the University of Rochester Medical Center's cardiothoracic surgery integrated residency program, Sagebin says a decade ago, he was "fully intending to finish high school, go on a mission, and come home and work construction with my dad." His family - who had emigrated when he was 3 years old to Utah from a small city in southern Brazil, near the Uruguayan border - had begun a successful business, building steel-frame homes. His mission for The Church of Jesus Christ of Latter-Day Saints had taken him to New York City, specifically Brooklyn and Queens.</p>
-		<p>A visit with his mission president "changed the trajectory for me," Sagebin remembers. "I worked closely with my mission president, and during that mentorship he planted the seed that I really needed a formal education.</p>
-		<p>"Unfortunately, I had not really prepared for that at that point. My parents were wonderful people, hardworking people, but we didn't have the social infrostructure necessary for college prep. It was not something that was inculcated in my family culture. I didn't take the SAT of the ACT, and I really hadn't prepared for college. So, when I came home, I just looked for an open-enrollment college."</p>
+	<img :src="content.image[1]" :alt="content.image[1]" />
+	<!-- <img :src="content.image[0]" :alt="content.image[0]" /> -->
+	<aside>{{content.hypotesis}}</aside>
+		<main>
+		<p v-for="data in content.desc" :key="data">
+      {{data}}
+    </p>
+    
+    <ul v-for="data in content.kinds" :key="data">
+      <li>
+        {{data}}
+      </li>
+    </ul>
 	</main>
 </article>
 </template>
 
 <script>
 export default {
-
+  props:{
+    content:Object
+  },
+  data(){
+    return{
+      SplitTitle:'none of lies'
+    }
+  },
+  methods:{
+    cutParaghrap(text) {
+      return `${text.match(/.{1,145}(\s|$)/g)[0]}`;
+    },
+  },
+  mounted(){
+    if (this.content && this.content.title) {
+      return this.SplitTitle = this.content.title.split(' ')
+    }
+  }
 }
 </script>
 

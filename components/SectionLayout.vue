@@ -1,6 +1,6 @@
 <template>
   <section :id="name" :style="`background-color:${bg}`">
-    <h1>
+    <h1 :style="`background-color:${bg}`">
       {{title}}
     </h1>
     <div class="content">
@@ -21,7 +21,6 @@ export default {
 
 <style scoped>
 section{
-  top: 50px;
   margin-top: 1em;
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -32,8 +31,14 @@ section{
   
 }
 h1{
+  position: sticky;
+  top: 70px;
+  margin-bottom: 10px;
+  margin-top: 80px;
   font-weight: 900;
   text-transform: capitalize;
+  z-index: 5;
+  width: auto;
 }
 .content{
   margin-bottom: 1em;
