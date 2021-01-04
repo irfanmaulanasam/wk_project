@@ -1,15 +1,15 @@
 <template>
-  <label id="thumbnail">
+  <label :id="changeSize('thumbnail')">
     <input
       type="radio"
       :value="label"
       :name="name"
       v-model="radioButtonValue"
     />
-    <div class="icon">
+    <div :class="changeSize('icon')" >
       <slot name="icon"></slot>
     </div>
-    <div class="title">
+    <div class="title" :class="{'isActive': value ===label}">
       <p>
         <slot name="title"></slot>
       </p>
@@ -26,7 +26,6 @@ export default {
         return this.value;
       },
       set: function () {
-        // Communicate the change to parent component so that selectedValue can be updated
         this.$emit("change", this.label);
       },
     },
@@ -35,18 +34,13 @@ export default {
     return {
       showNavbar: true,
       lastScrollPosition: 0,
-      scrollValue: 0
     }
   },
 
-  // mounted () {
-  //   this.lastScrollPosition = window.pageYOffset
-  //   window.addEventListener('scroll', this.onScroll)
-  //   const viewportMeta = document.createElement('meta')
-  //   viewportMeta.name = 'viewport'
-  //   viewportMeta.content = 'width=device-width, initial-scale=1'
-  //   document.head.appendChild(viewportMeta)
-  // },
+  mounted () {
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.onScroll)
+  },
 
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll)
@@ -57,11 +51,22 @@ export default {
       if (window.pageYOffset < 0) {
         return
       }
-      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < 505) {
         return
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition
       this.lastScrollPosition = window.pageYOffset
+    },
+    changeSize(className){
+      if(className=='icon' && this.showNavbar){
+        return 'icon'
+      } else if(className=='icon' && !this.showNavbar){
+        return 'smallericon'
+      } else if(className=='thumbnail' && this.showNavbar){
+        return 'thumbnail'
+      } else if(className=='thumbnail' && !this.showNavbar){
+        return 'smallerthumbnail'
+      }
     }
   }
 };
@@ -85,10 +90,12 @@ export default {
 #thumbnail input{
   display: none;
 }
+#smallerthumbnail input{
+  display: none;
+}
 .icon {
-  height: 50px;
+  height: 100%;
   width: 50px;
-  background: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,10 +117,14 @@ export default {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14pt;
   color: seagreen;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
 }
+.isActive{
+  font-weight: 900;
+}
+
 @media only screen and (min-width: 500px) {
   #thumbnail{
     height: 80px;
@@ -132,13 +143,32 @@ export default {
   #thumbnail{
     height: 100px;
   }
+  #smallerthumbnail{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+  }
+
   .icon {
-    height: 100px;
+    height: 100%;
     width: 100px;
+  }
+  .smallericon {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: seagreen;
   }
   .icon svg{
     height: 90%;
     width: 90%;
+  }
+  .smallericon svg{
+    height: 80%;
+    width: 80%;
   }
 }
 </style>

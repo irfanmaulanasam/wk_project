@@ -420,15 +420,19 @@ export default {
   data() {
     return {
       selected: "awning",
-      job: require('@/assets/content/jobOffer.json')
+      job: require('@/assets/content/jobOffer.json'),
     };
   },
   methods: {
     changeValue: function (newValue) {
       this.selected = newValue;
+      this.gotoTop
     },
+    gotoTop() {
+      window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+    }
   },
-};
+}
 </script>
 
 <style scoped>
@@ -442,19 +446,12 @@ export default {
   grid-gap: 20px;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
+  top: 100px;
   z-index: 1;
 }
 .content{
   margin-top: 1em;
-  /* height: 90vh; */
-  /* overflow-y: scroll; */
 }
-/* @media only screen and (min-width: 500px) {
-  .submenu {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
 
 @media only screen and (min-width: 850px) {
   .submenu {
