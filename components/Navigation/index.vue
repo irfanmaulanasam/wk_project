@@ -102,6 +102,9 @@ export default {
   box-sizing: border-box;
   margin-top: 0em;
   z-index: 999;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-right: 2em;
 }
 #logo {
   position: relative;
@@ -110,17 +113,22 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: red solid 1px;
 }
 .sidenav {
   display: contents;
   color: white;
-  font-size: small;
+  font-size: medium;
 }
 .sidenav > a {
   text-decoration: none;
+  margin-top: 3em;
   color: white;
   text-align: justify;
   font-weight: bold;
+}
+.sidenav>a:hover{
+  font-weight: 800;
 }
 .sidenav-button {
   display: flex;
@@ -170,24 +178,31 @@ a.nuxt-link-active {
   .sidenav-button {
     display: none;
   }
+  #logo>img{
+    border: red solid 1px;
+  }
 }
 @media screen and (min-width: 500px) {
   nav {
+    margin-left: 0;
+    margin-right: 0;
     justify-content: space-between;
     background: rgba(23, 230, 106, 0.671);
-    padding: 0.5em;
-  }
-  .colored {
-    background: rgb(1, 59, 16);
+    padding:1em;
   }
   .bar-menu{
     display: inline-flex;
     text-align: center;
     font-size: medium;
   }
+  .bar-menu:hover{
+    font-weight: 800;
+  }
+  .colored {
+    background: rgb(1, 59, 16);
+  }
   .sidenav-button {
     display: none;
   }
-
 }
 </style>

@@ -55,6 +55,6 @@ export default {
   padding-top: 2em;
   height: 100vh;
   z-index: 999;
-  width: 200px;
+  width: 50%;
 }
 </style>

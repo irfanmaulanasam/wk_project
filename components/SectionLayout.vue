@@ -32,7 +32,7 @@ section{
 }
 h1{
   position: sticky;
-  top: 70px;
+  top: 100px;
   margin-bottom: 10px;
   margin-top: 80px;
   font-weight: 900;
@@ -45,7 +45,7 @@ h1{
 }
 @media screen and(max-width: 1000px){
   section{
-    margin-top: 1em;
+    margin-top: 2.5em;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;

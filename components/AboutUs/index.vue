@@ -76,6 +76,10 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
+  #about-us{
+    /* border: red solid 1px; */
+    padding-top: 2.5em;
+  }
   .column-66,
   .column-33 {
     width: 100%;
