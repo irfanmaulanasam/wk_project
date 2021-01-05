@@ -4,8 +4,8 @@
     title="pekerjaan yang kami lakukan"
     bg="white"
   >
-    <div slot="content">
-      <div class="submenu">
+    <div slot="content" id="topContent">
+      <!-- <div class="submenu">
         <Thumbnail
           name="options"
           label="awning"
@@ -396,21 +396,16 @@
           </svg>
           <span slot="title">shade sail</span>
         </Thumbnail>
-      </div>
-      <div class="content">
-        <Awning v-if="selected== 'awning'"
-          :content="job.awning"
-        />
-        <Window v-if="selected== 'window'"
-          :content="job.window"
-        />
-        <Umbrella v-if="selected== 'umbrella'"
-          :content="job.umbrella"
-        />
-        <ShadeSail v-if="selected== 'shade sail'"
-          :content="job.shade_sail"
-        />
-      </div>
+      </div> -->
+      
+      <transition name="home">
+        <div class="jobcontent">
+          <Awning :content="job.awning" />
+          <Window :content="job.window" />
+          <Umbrella  :content="job.umbrella" />
+          <ShadeSail :content="job.shade_sail"/>
+        </div>
+      </transition>
     </div>
   </SectionLayout>
 </template>
@@ -420,36 +415,44 @@ export default {
   data() {
     return {
       selected: "awning",
-      job: require('@/assets/content/jobOffer.json'),
+      job: require("@/assets/content/jobOffer.json"),
     };
   },
   methods: {
     changeValue: function (newValue) {
       this.selected = newValue;
-      this.gotoTop
+      this.gotoTop;
     },
     gotoTop() {
-      window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-    }
+      document.getElementsByClassName("jobcontent").scrollIntoView();
+    },
   },
-}
+};
 </script>
 
 <style scoped>
+.home-enter-active,
+.home-leave-active {
+  transition: fade 0.5s;
+}
+.home-enter,
+.home-leave-active {
+  opacity: 0;
+}
 .submenu {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
   z-index: 1;
 }
-.content{
+.jobcontent {
   margin-top: 1em;
 }
 

@@ -51,7 +51,7 @@ export default {
       if (window.pageYOffset < 0) {
         return
       }
-      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < 505) {
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < 535) {
         return
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition

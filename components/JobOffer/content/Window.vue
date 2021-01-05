@@ -15,7 +15,6 @@
         </p>
       </div>
     </div>
-    <!-- original code -->
     <div class="sample">
       <div class="image">
         <img :src="content.image[1]" alt="content.image[1]">
@@ -135,7 +134,7 @@ p {
   padding-bottom: 0.5em;
   display: flex;
   width: 100%;
-  flex-direction: column;
+  justify-content: space-around;
 }
 .sample .image{
   height: 450px;
@@ -144,10 +143,5 @@ p {
   height: 100%;
   object-fit: contain;
 }
-@media screen and(min-width: 850px){
-  .sample{
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
+/*  */
 </style>
