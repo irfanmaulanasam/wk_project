@@ -2,7 +2,7 @@
   <div>
     <Navigation />
     <Nuxt />
-    <Scroll/>
+    <!-- <Scroll/> -->
     <Footer/>
   </div>
 </template>
